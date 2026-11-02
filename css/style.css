@@ -44,13 +44,10 @@ h1 { margin: 22px 0 20px; font-size: clamp(3rem, 7vw, 6.4rem); line-height: .96;
 .quick-facts span { display: flex; align-items: center; gap: 8px; }
 .hero-card { position: relative; overflow: hidden; min-height: 440px; padding: 30px; border: 1px solid var(--line); border-radius: 30px; background: linear-gradient(160deg, rgba(21,44,71,.92), rgba(9,23,39,.88)); box-shadow: var(--shadow); }
 .hero-card::before { content: ""; position: absolute; width: 230px; height: 230px; right: -70px; top: -70px; border-radius: 50%; background: radial-gradient(circle, rgba(64,217,196,.32), transparent 67%); }
-.monogram { width: 92px; height: 92px; display: grid; place-items: center; margin-bottom: 38px; border-radius: 25px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #07111f; font-size: 2rem; font-weight: 900; letter-spacing: -.08em; }
+.profile-photo { position: relative; z-index: 1; display: block; width: 200px; height: 200px; margin-bottom: 24px; border: 3px solid rgba(64,217,196,.65); border-radius: 50%; object-fit: cover; object-position: center 30%; box-shadow: 0 10px 30px rgba(0,0,0,.25); transition: transform .25s ease, box-shadow .25s ease; }
+.profile-photo:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 16px 38px rgba(0,0,0,.35); }
 .hero-card h2 { margin: 0 0 8px; font-size: 1.7rem; }
 .hero-card p { color: var(--muted); margin: 0; }
-.metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 31px; }
-.metric { padding: 17px; border: 1px solid var(--line); border-radius: 17px; background: rgba(255,255,255,.035); }
-.metric strong { display: block; color: var(--primary); font-size: 1.35rem; }
-.metric small { color: var(--muted); }
 section { padding: 96px 0; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
 .kicker { margin: 0 0 8px; color: var(--primary); font-size: .82rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
@@ -116,5 +113,6 @@ footer { padding: 30px 0 40px; color: var(--muted); border-top: 1px solid var(--
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 @media (max-width: 900px) { .hero-grid, .about-grid { grid-template-columns: 1fr; } .hero { min-height: auto; } .hero-card { min-height: auto; } .skills-grid { grid-template-columns: repeat(2, 1fr); } .education-grid { grid-template-columns: 1fr; } .experience { grid-template-columns: 1fr; gap: 16px; } .project-highlights { grid-template-columns: 1fr; } .nav-links a:not(.nav-cta) { display: none; } }
-@media (max-width: 560px) { .container { width: min(calc(100% - 24px), var(--max)); } section { padding: 72px 0; } .nav-inner { height: 64px; } .brand-name { display: none; } h1 { font-size: clamp(2.75rem, 16vw, 4rem); } .hero { padding-top: 54px; } .hero-card, .experience, .about-copy, .contact-wrap { padding: 23px; } .project-summary { padding: 20px; } .project-details { padding: 0 20px 20px; } .project-heading, .project-footer { align-items: flex-start; flex-direction: column; } .strengths, .skills-grid { grid-template-columns: 1fr; } .metric-grid { grid-template-columns: 1fr 1fr; } .section-head { display: block; } .btn { width: 100%; } .hero-actions, .contact-actions { display: grid; } }
+@media (max-width: 560px) { .container { width: min(calc(100% - 24px), var(--max)); } section { padding: 72px 0; } .nav-inner { height: 64px; } .brand-name { display: none; } h1 { font-size: clamp(2.75rem, 16vw, 4rem); } .hero { padding-top: 54px; } .hero-card, .experience, .about-copy, .contact-wrap { padding: 23px; } .profile-photo { width: 170px; height: 170px; } .project-summary { padding: 20px; } .project-details { padding: 0 20px 20px; } .project-heading, .project-footer { align-items: flex-start; flex-direction: column; } .strengths, .skills-grid { grid-template-columns: 1fr; } .section-head { display: block; } .btn { width: 100%; } .hero-actions, .contact-actions { display: grid; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+@media (prefers-reduced-motion: reduce) { .profile-photo:hover { transform: none; } }
