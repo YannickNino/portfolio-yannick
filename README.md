@@ -12,7 +12,7 @@ Ce site statique met en avant mes compétences et réalisations autour de la con
 
 - Présentation et résumé de mon profil
 - Expériences professionnelles et technologies utilisées
-- Projets en data engineering et analytics
+- Page dédiée aux projets en data engineering et analytics (`projets.html`)
 - Compétences techniques
 - Coordonnées, profil LinkedIn et CV au format PDF
 
@@ -31,6 +31,7 @@ Puis ouvrez [http://localhost:8000](http://localhost:8000) dans votre navigateur
 ```text
 .
 ├── index.html             # Contenu des pages et sections du portfolio
+├── projets.html           # Présentation détaillée des projets
 ├── css/
 │   └── style.css          # Styles et mise en page
 ├── js/

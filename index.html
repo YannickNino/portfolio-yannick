@@ -22,7 +22,7 @@
 			<div class="nav-links">
 				<a href="#apropos">À propos</a>
 				<a href="#experiences">Expériences</a>
-				<a href="#projets">Projets</a>
+				<a href="projets.html">Projets</a>
 				<a href="#competences">Compétences</a>
 				<a class="btn btn-primary nav-cta" href="#contact">Me contacter</a>
 			</div>
@@ -40,6 +40,7 @@
 						artificielle.</p>
 					<div class="hero-actions">
 						<a class="btn btn-primary" href="#experiences">Découvrir mes expériences ↓</a>
+						<a class="btn btn-secondary" href="projets.html">Découvrir mes projets ↗</a>
 						<a class="btn btn-secondary" href="mailto:yannickaristide.jlg@gmail.com"
 							data-umami-event="Contact email">Échanger par e-mail</a>
 						<a class="btn btn-secondary" href="assets/pdf/CV_Yannick_S.pdf"
@@ -203,151 +204,6 @@
 									class="chip">Reporting</span><span class="chip">Gouvernance</span></div>
 						</div>
 					</article>
-				</div>
-			</div>
-		</section>
-
-		<section id="projets">
-			<div class="container">
-				<div class="section-head reveal">
-					<div>
-						<p class="kicker">Projets réalisés</p>
-						<h2 class="section-title">Des plateformes data conçues de bout en bout.</h2>
-						<p class="section-intro">Des projets concrets qui associent modélisation, qualité des données
-							et industrialisation.</p>
-					</div>
-				</div>
-				<div class="project-list">
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="Energy analytics">
-							<span>Plateforme Analytics Engineering - Pilotage Énergétique (End-to-End)</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
-						<div class="project-details">
-							<div class="project-heading">
-								<p class="project-category">Analytics Engineering · Énergie</p>
-								<span class="project-status">Projet de bout en bout</span>
-							</div>
-						<p class="project-description">Conception et développement d’une plateforme analytique complète
-							pour un distributeur d’énergie, simulant un environnement de production moderne selon les
-							principes du Modern Data Stack.</p>
-						<div class="project-highlights">
-							<div class="project-highlight">
-								<h4>Modélisation métier</h4>
-								<p>Création avec dbt d’un schéma en étoile composé de dimensions et d’une table de faits,
-									transformant les données brutes en indicateurs tels que le coût estimé par consommation.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>Qualité et fiabilité</h4>
-								<p>Mise en place de plus de 20 tests automatisés : unicité, intégrité référentielle et
-									règles métier personnalisées pour garantir la confiance dans les données.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>CI/CD avec environnement éphémère</h4>
-								<p>Déploiement d’un pipeline GitHub Actions avec SQL Server dans Docker. Les Pull Requests
-									sont bloquées automatiquement en cas de régression.</p>
-							</div>
-						</div>
-						<div class="project-footer">
-							<div>
-								<p class="tech-label">Stack technique</p>
-								<div class="chips">
-									<span class="chip">SQL Server</span><span class="chip">dbt</span><span
-										class="chip">GitHub Actions</span><span class="chip">Docker</span><span
-										class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span>
-								</div>
-							</div>
-							<p class="project-progress">Power BI : en cours</p>
-						</div>
-						</div>
-					</details>
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="CBC Bank">
-							<span>CBC Bank — Pipeline de données financières</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
-						<div class="project-details">
-							<div class="project-heading">
-								<p class="project-category">Data Engineering · Finance</p>
-								<span class="project-status">Projet</span>
-							</div>
-						<p class="project-description">Industrialisation d’un pipeline de données pour les devises,
-							taux de change et historiques de marché, au service du reporting financier et de l’analyse
-							du risque FX.</p>
-						<div class="project-highlights">
-							<div class="project-highlight">
-								<h4>Pipeline de données</h4>
-								<p>Traitement des données de devises, taux de change et historiques de marché.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>Qualité et reporting</h4>
-								<p>Mise en place de contrôles qualité pour fiabiliser le reporting financier et
-									l’analyse du risque FX.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>Performance</h4>
-								<p>Optimisation des traitements Spark et des tables Delta pour améliorer les
-									performances et les coûts.</p>
-							</div>
-						</div>
-						<div class="project-footer">
-							<div>
-								<p class="tech-label">Stack technique</p>
-								<div class="chips">
-									<span class="chip">Databricks</span><span class="chip">PySpark</span><span
-										class="chip">SQL</span><span class="chip">Delta Lake</span><span
-										class="chip">Git</span><span class="chip">Data Quality</span><span
-										class="chip">Data Modeling</span>
-								</div>
-							</div>
-							<p class="project-progress">Data Engineer</p>
-						</div>
-						</div>
-					</details>
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="FECAFOOT-SI">
-							<span>FECAFOOT-SI — Plateforme de données football</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
-						<div class="project-details">
-							<div class="project-heading">
-								<p class="project-category">Data Engineering · Sport</p>
-								<span class="project-status">Projet</span>
-							</div>
-						<p class="project-description">Conception d’un pipeline de bout en bout dédié aux équipes,
-							joueurs, matchs et performances, avec des transformations automatisées vers un entrepôt de
-							données cloud.</p>
-						<div class="project-highlights">
-							<div class="project-highlight">
-								<h4>Pipeline de bout en bout</h4>
-								<p>Collecte et transformation des données d’équipes, joueurs, matchs et performances.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>Orchestration cloud</h4>
-								<p>Automatisation des transformations et alimentation d’un entrepôt de données cloud.</p>
-							</div>
-							<div class="project-highlight">
-								<h4>Industrialisation</h4>
-								<p>Mise en place de tests, validations et déploiements selon une démarche CI/CD.</p>
-							</div>
-						</div>
-						<div class="project-footer">
-							<div>
-								<p class="tech-label">Stack technique</p>
-								<div class="chips">
-									<span class="chip">Python</span><span class="chip">dbt</span><span
-										class="chip">Apache Airflow</span><span class="chip">Google BigQuery</span><span
-										class="chip">GCP</span><span class="chip">Git</span><span
-										class="chip">GitHub Actions</span><span class="chip">ETL/ELT</span>
-								</div>
-							</div>
-							<p class="project-progress">Data Engineer</p>
-						</div>
-						</div>
-					</details>
 				</div>
 			</div>
 		</section>
