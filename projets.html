@@ -41,12 +41,8 @@
 					</div>
 				</div>
 				<div class="project-list">
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="Energy analytics">
-							<span>Plateforme Analytics Engineering - Pilotage Énergétique (End-to-End)</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
+					<article class="project-item reveal">
+						<h2 class="project-title">Plateforme Analytics Engineering - Pilotage Énergétique (End-to-End)</h2>
 						<div class="project-details">
 							<div class="project-heading">
 								<p class="project-category">Analytics Engineering · Énergie</p>
@@ -84,13 +80,9 @@
 								<p class="project-progress">Power BI : en cours</p>
 							</div>
 						</div>
-					</details>
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="CBC Bank">
-							<span>CBC Bank — Pipeline de données financières</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
+					</article>
+					<article class="project-item reveal">
+						<h2 class="project-title">CBC Bank — Pipeline de données financières</h2>
 						<div class="project-details">
 							<div class="project-heading">
 								<p class="project-category">Data Engineering · Finance</p>
@@ -128,13 +120,9 @@
 								<p class="project-progress">Data Engineer</p>
 							</div>
 						</div>
-					</details>
-					<details class="project-item reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="FECAFOOT-SI">
-							<span>FECAFOOT-SI — Plateforme de données football</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
+					</article>
+					<article class="project-item reveal">
+						<h2 class="project-title">FECAFOOT-SI — Plateforme de données football</h2>
 						<div class="project-details">
 							<div class="project-heading">
 								<p class="project-category">Data Engineering · Sport</p>
@@ -170,13 +158,9 @@
 								<p class="project-progress">Data Engineer</p>
 							</div>
 						</div>
-					</details>
-					<details class="project-item project-item-pizzeria reveal">
-						<summary class="project-summary" data-umami-event="Project opened"
-							data-umami-event-project="Pizzeria sales">
-							<span>Pilotage des ventes d’une pizzeria</span>
-							<span class="project-toggle" aria-hidden="true"></span>
-						</summary>
+					</article>
+					<article class="project-item project-item-pizzeria reveal">
+						<h2 class="project-title">Pilotage des ventes d’une pizzeria</h2>
 						<div class="project-details">
 							<div class="project-heading">
 								<p class="project-category">Data Analytics · Restauration</p>
@@ -187,15 +171,21 @@
 								performances commerciales d’une pizzeria.</p>
 							<div class="project-gallery">
 								<figure class="project-image">
-									<img src="assets/images/Pizzeria_Sale1.png"
-										alt="Tableau de bord des ventes de pizzas : chiffre d’affaires, commandes, ventes par jour, mois, catégorie et taille."
-										loading="lazy" />
+									<button class="project-image-trigger" type="button"
+										aria-label="Agrandir le tableau de bord des ventes de pizzas">
+										<img src="assets/images/Pizzeria_Sale1.png"
+											alt="Tableau de bord des ventes de pizzas : chiffre d’affaires, commandes, ventes par jour, mois, catégorie et taille."
+											loading="lazy" />
+									</button>
 									<figcaption>Vue d’ensemble des ventes et indicateurs clés</figcaption>
 								</figure>
 								<figure class="project-image">
-									<img src="assets/images/Pizzeria_Sales2.png"
-										alt="Tableau de bord Power BI comparant les pizzas les plus et les moins vendues."
-										loading="lazy" />
+									<button class="project-image-trigger" type="button"
+										aria-label="Agrandir le tableau de bord des meilleures et moins bonnes ventes">
+										<img src="assets/images/Pizzeria_Sales2.png"
+											alt="Tableau de bord Power BI comparant les pizzas les plus et les moins vendues."
+											loading="lazy" />
+									</button>
 									<figcaption>Analyse des meilleures et moins bonnes ventes</figcaption>
 								</figure>
 							</div>
@@ -227,12 +217,17 @@
 								</div>
 							</div>
 						</div>
-					</details>
+					</article>
 				</div>
 				<p class="section-intro"><a href="index.html">← Retour à la page d’accueil</a></p>
 			</div>
 		</section>
 	</main>
+
+	<dialog class="image-lightbox" aria-label="Illustration agrandie">
+		<button class="image-lightbox-close" type="button" aria-label="Fermer l’illustration agrandie">×</button>
+		<img class="image-lightbox-image" alt="" />
+	</dialog>
 
 	<footer>
 		<div class="container footer-inner"><span>© <span id="year"></span> Yannick Aristide SONE</span><span>Data

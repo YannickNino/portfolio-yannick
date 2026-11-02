@@ -15,3 +15,38 @@ if ('IntersectionObserver' in window) {
 } else {
 	items.forEach((item) => item.classList.add('visible'));
 }
+
+const imageLightbox = document.querySelector('.image-lightbox');
+
+if (imageLightbox instanceof HTMLDialogElement) {
+	const lightboxImage = imageLightbox.querySelector('.image-lightbox-image');
+	const closeButton = imageLightbox.querySelector('.image-lightbox-close');
+
+	if (lightboxImage instanceof HTMLImageElement && closeButton instanceof HTMLButtonElement) {
+		document.querySelectorAll('.project-image-trigger').forEach((trigger) => {
+			trigger.addEventListener('click', () => {
+				const image = trigger.querySelector('img');
+
+				if (!(image instanceof HTMLImageElement)) {
+					return;
+				}
+
+				lightboxImage.src = image.currentSrc || image.src;
+				lightboxImage.alt = image.alt;
+				imageLightbox.showModal();
+			});
+		});
+
+		closeButton.addEventListener('click', () => imageLightbox.close());
+		document.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape' && imageLightbox.open) {
+				imageLightbox.close();
+			}
+		});
+		imageLightbox.addEventListener('click', (event) => {
+			if (event.target === imageLightbox) {
+				imageLightbox.close();
+			}
+		});
+	}
+}
